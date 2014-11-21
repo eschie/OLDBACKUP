@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.eschie.info [NC]
+RewriteRule ^(.*)$ http://eschie.info/$1 [L,R=301]

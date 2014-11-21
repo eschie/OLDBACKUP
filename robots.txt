@@ -1,0 +1,4 @@
+User-agent: *
+
+
+Sitemap: http://eschie.info/sitemap.xml
